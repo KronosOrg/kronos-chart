@@ -1,0 +1,63 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Values",
+    "type": "object",
+    "properties": {
+        "manager": {
+            "description": "Kronos Operator",
+            "type": "object",
+            "properties": {
+                "resources": {
+                    "description": "Kronos Controller Resources",
+                    "type": "object",
+                    "properties": {
+                        "limits": {
+                            "description": "Kronos Controller Resource Limits",
+                            "type": "object",
+                            "properties": {
+                                "cpu": {
+                                    "description": "Kronos Controller CPU Limits",
+                                    "type": "string"
+                                },
+                                "memory": {
+                                    "description": "Kronos Controller Memory Limits",
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "requests": {
+                            "description": "Kronos Controller Resource Requests",
+                            "type": "object",
+                            "properties": {
+                                "cpu": {
+                                    "description": "Kronos Controller CPU Requests",
+                                    "type": "string"
+                                },
+                                "memory": {
+                                    "description": "Kronos Controller Memory Requests",
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "metrics": {
+            "description": "Kronos Controller Metrics",
+            "type": "object",
+            "properties": {
+                "serviceMonitor": {
+                    "description": "Prometheus ServiceMonitor CRD For Exposing Kronos Controller Metrics",
+                    "type": "object",
+                    "properties": {
+                        "create": {
+                            "description": "Enable/Disable Creation of Prometheus ServiceMonitor",
+                            "type": "boolean"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
