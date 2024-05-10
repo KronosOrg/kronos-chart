@@ -22,3 +22,48 @@ version: 0.3.1
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "0.3.1"
+
+annotations:
+  artifacthub.io/category: operator   
+  artifacthub.io/containsSecurityUpdates: "true"
+  artifacthub.io/images: |
+    - name: kronos-core
+      image: kronosorg/kronos-core:v0.3.1
+      platforms:
+        - linux/amd64 
+  artifacthub.io/crds: |
+    - kind: KronosApp
+      version: core.wecraft.tn/v1alpha1
+      name: kronosapp
+      displayName: kronosApp
+      description: The Kronos-Core Custom Resource Definition (CRD) allows users to define resource schedules for their Kubernetes clusters. The CRD manifest includes several fields that users can configure to customize their resource schedules.    
+  artifacthub.io/crdsExamples: |
+    - apiVersion: core.wecraft.tn/v1alpha1
+      kind: KronosApp
+      metadata:
+        name: dev-scheduling
+      spec:
+        startSleep: "18:00"
+        endSleep: "07:00"
+        weekdays: "1-5"
+        timezone: "Africa/Tunis"
+        includedObjects: 
+          - apiVersion: "apps/v1"
+            kind: "*"
+            namespace: "frontend"
+            includeRef: "dev.*"
+            excludeRef: ""  
+  artifacthub.io/license: MIT
+  artifacthub.io/links: |
+    - name: kronos-docs
+      url: https://kronosorg.github.io/kronos-docs/
+    - name: kronos-github
+      url: https://github.com/KronosOrg/kronos-core  
+  artifacthub.io/maintainers: |
+    - name: IsmailAbdelkefi
+      email: abdelkefi.ismail@pm.me  
+  artifacthub.io/operator: "true"
+  artifacthub.io/operatorCapabilities: Basic Install
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack    
