@@ -1,0 +1,11 @@
+apiVersion: v1
+entries:
+  alpine:
+  - description: KronosCore Operator Helm Chart
+    home: https://kronosorg.github.io/kronos-chart/
+    name: kronos-core
+    sources:
+    - https://github.com/KronosOrg/kronos-core
+    urls:
+    - kronos-0.3.1.tgz
+    version: 0.3.1
