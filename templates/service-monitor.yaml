@@ -1,0 +1,28 @@
+{{- if .Values.metrics.serviceMonitor.create -}}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    app: kronos
+    control-plane: controller-manager
+  name: kronos-controller-manager-metrics-monitor
+  namespace: {{ .Release.Namespace }}
+spec:
+  endpoints:
+  - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
+    path: /metrics
+    port: https
+    scheme: https
+    tlsConfig:
+      insecureSkipVerify: true
+    metricRelabelings:
+    - action: replace
+      regex: (.*)
+      replacement: kronos_$1
+      sourceLabels:
+      - __name__
+      targetLabel: __name__
+  selector:
+    matchLabels:
+      control-plane: controller-manager
+{{- end }}

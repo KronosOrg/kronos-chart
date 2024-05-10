@@ -1,0 +1,11 @@
+manager:
+  resources:
+    limits:
+      cpu: 500m
+      memory: 128Mi
+    requests:
+      cpu: 10m
+      memory: 64Mi
+metrics:
+  serviceMonitor:
+    create: false
