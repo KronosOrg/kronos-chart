@@ -23,7 +23,7 @@ version: 0.3.3
 # It is recommended to use it with quotes.
 appVersion: "0.3.1"
 
-icon: kronos_logo.png
+icon: https://kronosorg.github.io/kronos-chart/kronos_logo.png
 
 annotations: 
   artifacthub.io/containsSecurityUpdates: "true"
