@@ -23,7 +23,7 @@ version: 0.3.2
 # It is recommended to use it with quotes.
 appVersion: "0.3.1"
 
-icon: https://avatars.githubusercontent.com/u/168119509?s=200&v=4
+icon: kronos_logo.png
 
 annotations:
   artifacthub.io/category: operator   
