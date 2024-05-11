@@ -1,23 +1,13 @@
 apiVersion: v1
 entries:
   kronos-core:
-  - version: 0.3.1
+  - version: 0.3.3
     appVersion: 0.3.1
     name: kronos-core
     description: KronosCore Operator Helm Chart
     home: https://kronosorg.github.io/kronos-chart/
-    digest: 087E26BB221916C0AB1D5BC5323C9E64BBBA4CEE9FC69B0C10B0CB2E0784D58E
+    digest: 8A4CE00DA4CE59FA65840F6A0466BE77CE1875115258B26E69A4F82E702278B7
     sources:
     - https://github.com/KronosOrg/kronos-core
     urls:
-    - https://kronosorg.github.io/kronos-chart/kronos-0.3.1.tgz
-  - version: 0.3.2
-    appVersion: 0.3.1
-    name: kronos-core
-    description: KronosCore Operator Helm Chart
-    home: https://kronosorg.github.io/kronos-chart/
-    digest: 0259B01FFB026E74DBB15BEA76BAC52C905623AB53CD1DBE3EFD5912CCAE9BF3
-    sources:
-    - https://github.com/KronosOrg/kronos-core
-    urls:
-    - https://kronosorg.github.io/kronos-chart/kronos-0.3.2.tgz
+    - https://kronosorg.github.io/kronos-chart/kronos-0.3.3.tgz
