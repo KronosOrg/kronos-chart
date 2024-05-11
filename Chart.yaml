@@ -25,8 +25,7 @@ appVersion: "0.3.1"
 
 icon: kronos_logo.png
 
-annotations:
-  artifacthub.io/category: operator   
+annotations: 
   artifacthub.io/containsSecurityUpdates: "true"
   artifacthub.io/images: |
     - name: kronos-core
