@@ -1,0 +1,15 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  labels:
+    app: kronos
+  name: kronos-serving-cert
+  namespace: {{ .Release.Namespace }}
+spec:
+  dnsNames:
+  - kronos-webhook-service.{{ .Release.Namespace }}.svc
+  - kronos-webhook-service.{{ .Release.Namespace }}.svc.cluster.local
+  issuerRef:
+    kind: Issuer
+    name: kronos-selfsigned-issuer
+  secretName: webhook-server-cert

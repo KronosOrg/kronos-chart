@@ -15,13 +15,13 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.3.4
+version: 0.4.0
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "0.3.1"
+appVersion: "0.4.0"
 
 icon: https://kronosorg.github.io/kronos-chart/kronos_logo.png
 
@@ -29,7 +29,7 @@ annotations:
   artifacthub.io/containsSecurityUpdates: "true"
   artifacthub.io/images: |
     - name: kronos-core
-      image: kronosorg/kronos-core:v0.3.1
+      image: kronosorg/kronos-core:v0.4.0
       platforms:
         - linux/amd64 
   artifacthub.io/crds: |
@@ -68,3 +68,4 @@ annotations:
   artifacthub.io/prerelease: "false"
   artifacthub.io/recommendations: |
     - url: https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack    
+    - url: https://artifacthub.io/packages/helm/cert-manager/cert-manager

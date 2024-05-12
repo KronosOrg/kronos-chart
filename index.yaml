@@ -23,4 +23,15 @@ entries:
     urls:
     - https://kronosorg.github.io/kronos-chart/kronos-0.3.4.tgz
     created: "2024-05-12T13:00:00.000000000Z"
+  - version: 0.4.0
+    appVersion: 0.4.0
+    name: kronos-core
+    description: KronosCore Operator Helm Chart
+    home: https://kronosorg.github.io/kronos-chart/
+    digest: 82760771564136D0CF6947113289AEECB49A20674140AA92D3F98E86DB1A7D0F
+    sources:
+    - https://github.com/KronosOrg/kronos-core
+    urls:
+    - https://kronosorg.github.io/kronos-chart/kronos-0.4.0.tgz
+    created: "2024-05-14T01:00:00.000000000Z"
   
