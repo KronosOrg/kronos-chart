@@ -1,0 +1,29 @@
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+metadata:
+  annotations:
+    cert-manager.io/inject-ca-from: {{ .Release.Namespace }}/kronos-serving-cert
+  labels:
+    app: kronos
+  name: kronos-mutating-webhook-configuration
+webhooks:
+- admissionReviewVersions:
+  - v1
+  clientConfig:
+    service:
+      name: kronos-webhook-service
+      namespace: {{ .Release.Namespace }}
+      path: /mutate-core-wecraft-tn-v1alpha1-kronosapp
+  failurePolicy: Fail
+  name: mkronosapp.kb.io
+  rules:
+  - apiGroups:
+    - core.wecraft.tn
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    resources:
+    - kronosapps
+  sideEffects: None
