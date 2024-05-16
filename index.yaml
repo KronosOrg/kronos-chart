@@ -17,9 +17,9 @@ entries:
     name: kronos-core
     description: KronosCore Operator Helm Chart
     home: https://kronosorg.github.io/kronos-chart/
-    digest: D604962CE860551FEA2A6454E4754FB4B438DE8F8250C974287DD22D4E1FA4C4
+    digest: C23D11E5DC9696C3951AFD57F3685D7BD8D522C8D42B32450A40EA348A545870
     sources:
     - https://github.com/KronosOrg/kronos-core
     urls:
     - https://kronosorg.github.io/kronos-chart/kronos-0.4.1.tgz
-    created: "2024-05-16T16:00:00.000000000Z"
+    created: "2024-05-16T18:00:00.000000000Z"
