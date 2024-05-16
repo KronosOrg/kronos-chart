@@ -12,7 +12,7 @@ To install the Kronos Helm chart, add the repository and use the `helm install` 
 
 ```bash
 helm repo add kronos https://kronosorg.github.io/kronos-charts
-helm install kronos-core kronos/kronos-core
+helm install <release-name> kronos-core/kronos-core --create-namespace true --namespace <installation-namespace> --version 0.4.1 -f values.yaml
 ```
 
 ## Values Schema
