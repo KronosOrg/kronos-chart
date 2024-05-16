@@ -1,39 +1,6 @@
 apiVersion: v1
 entries:
   kronos-core:
-  - version: 0.3.3
-    appVersion: 0.3.1
-    name: kronos-core
-    description: KronosCore Operator Helm Chart
-    home: https://kronosorg.github.io/kronos-chart/
-    digest: 4B5B27DE12A7732492F5BE07BBFC03A19C04E63878EB67467E6EBFAB42966EE3
-    sources:
-    - https://github.com/KronosOrg/kronos-core
-    urls:
-    - https://kronosorg.github.io/kronos-chart/kronos-0.3.3.tgz
-    created: "2024-05-12T12:00:00.000000000Z"
-  - version: 0.3.4
-    appVersion: 0.3.1
-    name: kronos-core
-    description: KronosCore Operator Helm Chart
-    home: https://kronosorg.github.io/kronos-chart/
-    digest: 954DC86C311A4440F43E1143FA70C21E9F9065DE71AF2AF3CCC06D9125589327
-    sources:
-    - https://github.com/KronosOrg/kronos-core
-    urls:
-    - https://kronosorg.github.io/kronos-chart/kronos-0.3.4.tgz
-    created: "2024-05-12T13:00:00.000000000Z"
-  - version: 0.4.0
-    appVersion: 0.4.0
-    name: kronos-core
-    description: KronosCore Operator Helm Chart
-    home: https://kronosorg.github.io/kronos-chart/
-    digest: 82760771564136D0CF6947113289AEECB49A20674140AA92D3F98E86DB1A7D0F
-    sources:
-    - https://github.com/KronosOrg/kronos-core
-    urls:
-    - https://kronosorg.github.io/kronos-chart/kronos-0.4.0.tgz
-    created: "2024-05-15T01:00:00.000000000Z"
   - version: 0.3.5
     appVersion: 0.3.1
     name: kronos-core
@@ -45,14 +12,14 @@ entries:
     urls:
     - https://kronosorg.github.io/kronos-chart/kronos-0.3.5.tgz
     created: "2024-05-13T01:00:00.000000000Z"
-  - version: 0.4.0
+  - version: 0.4.1
     appVersion: 0.4.0
     name: kronos-core
     description: KronosCore Operator Helm Chart
     home: https://kronosorg.github.io/kronos-chart/
-    digest: 82760771564136D0CF6947113289AEECB49A20674140AA92D3F98E86DB1A7D0F
+    digest: D604962CE860551FEA2A6454E4754FB4B438DE8F8250C974287DD22D4E1FA4C4
     sources:
     - https://github.com/KronosOrg/kronos-core
     urls:
-    - https://kronosorg.github.io/kronos-chart/kronos-0.4.0.tgz
-    created: "2024-05-15T01:00:00.000000000Z"
+    - https://kronosorg.github.io/kronos-chart/kronos-0.4.1.tgz
+    created: "2024-05-16T16:00:00.000000000Z"

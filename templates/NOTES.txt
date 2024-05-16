@@ -1,5 +1,5 @@
 Thank you for installing Kronos Core!
 
-To start using Kronos Core, please visit the documentation website at https://kronosorg.github.io/kronos-core/ for detailed instructions and examples.
+To start using Kronos Core, please visit the documentation website at https://kronosorg.github.io/kronos-docs/ for detailed instructions and examples.
 
 Happy scheduling with Kronos Core!
